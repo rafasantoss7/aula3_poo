@@ -15,7 +15,7 @@ class ContaBancaria{
         return false;
     }
     public function sacar($valor){
-        if ($valor > 0 && $this->saldo >= valor){
+        if ($valor > 0 && $this->saldo >= $valor){
             $this->saldo -= $valor;
             return true;
         }
